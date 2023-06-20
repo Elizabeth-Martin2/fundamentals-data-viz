@@ -1,0 +1,166 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {"name": "data-c07213cbed0b4fde84dbb2064f82acb1"},
+          "mark": {"type": "bar"},
+          "encoding": {
+            "color": {
+              "condition": {
+                "param": "param_3",
+                "field": "subject_race",
+                "scale": {"scheme": "set2"},
+                "title": "Race Groups",
+                "type": "nominal"
+              },
+              "value": "lightgrey"
+            },
+            "tooltip": [
+              {"field": "subject_race", "title": "Race", "type": "nominal"},
+              {
+                "field": "percentage",
+                "title": "Percentage",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {"labelAngle": 0},
+              "bin": false,
+              "field": "subject_race",
+              "title": "Race",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "percentage",
+              "scale": {"domain": [0, 70]},
+              "title": "Population Percentage",
+              "type": "quantitative"
+            }
+          },
+          "height": 500,
+          "name": "view_7",
+          "title": "Racial Diversity of San Antonio",
+          "width": 300
+        },
+        {
+          "data": {"name": "data-9b87edfb45843ae65951b9631b965601"},
+          "mark": {"type": "bar"},
+          "encoding": {
+            "color": {
+              "condition": {
+                "param": "param_3",
+                "field": "subject_race",
+                "scale": {"scheme": "set2"},
+                "title": "Race Groups",
+                "type": "nominal"
+              },
+              "value": "lightgrey"
+            },
+            "tooltip": [
+              {"field": "subject_race", "title": "Race", "type": "nominal"},
+              {
+                "field": "percentage",
+                "title": "Percentage",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {"labelAngle": 0},
+              "bin": false,
+              "field": "subject_race",
+              "title": "Race",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "percentage",
+              "scale": {"domain": [0, 70]},
+              "title": "Stops Percentage",
+              "type": "quantitative"
+            }
+          },
+          "height": 500,
+          "name": "view_8",
+          "title": "Racial Diversity of San Antonio Traffic Stops",
+          "width": 300
+        }
+      ],
+      "resolve": {"scale": {"color": "independent"}}
+    },
+    {
+      "data": {"name": "data-8397d84631d8eb56cf3d018b2ccc3b81"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "param_3",
+            "field": "subject_race",
+            "legend": null,
+            "scale": {"scheme": "set2"},
+            "type": "nominal"
+          },
+          "value": "lightgrey"
+        },
+        "tooltip": [
+          {"field": "subject_race", "title": "Race", "type": "nominal"},
+          {"field": "hit_rate", "title": "Hit Rate", "type": "quantitative"}
+        ],
+        "x": {
+          "bin": false,
+          "field": "hit_rate",
+          "title": "Hit Rate",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {"labelAngle": -50},
+          "field": "subject_race",
+          "title": "Subject Race",
+          "type": "nominal"
+        }
+      },
+      "height": 200,
+      "name": "view_9",
+      "resolve": {"scale": {"color": "independent"}},
+      "title": "Hit Rate by Race",
+      "width": 780
+    }
+  ],
+  "params": [
+    {
+      "name": "param_3",
+      "select": {"type": "point", "fields": ["subject_race"]},
+      "bind": "scales",
+      "views": ["view_7", "view_8", "view_9"]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-c07213cbed0b4fde84dbb2064f82acb1": [
+      {
+        "subject_race": "Asian/pacific islander",
+        "num_people": 41972,
+        "percentage": 2.93
+      },
+      {"subject_race": "Black", "num_people": 86293, "percentage": 6.02},
+      {"subject_race": "Hispanic", "num_people": 942637, "percentage": 65.71},
+      {"subject_race": "White", "num_people": 331546, "percentage": 23.11}
+    ],
+    "data-9b87edfb45843ae65951b9631b965601": [
+      {"subject_race": "Hispanic", "stops": 50398, "percentage": 51.97},
+      {"subject_race": "White", "stops": 35291, "percentage": 36.39},
+      {"subject_race": "Black", "stops": 10089, "percentage": 10.4},
+      {
+        "subject_race": "Asian/pacific islander",
+        "stops": 1193,
+        "percentage": 1.23
+      }
+    ],
+    "data-8397d84631d8eb56cf3d018b2ccc3b81": [
+      {"subject_race": "Asian/pacific islander", "hit_rate": 0.125},
+      {"subject_race": "Black", "hit_rate": 0.08181818181818182},
+      {"subject_race": "Hispanic", "hit_rate": 0.08231707317073171},
+      {"subject_race": "White", "hit_rate": 0.08020477815699659}
+    ]
+  }
+}
