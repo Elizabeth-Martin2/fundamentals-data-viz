@@ -28,6 +28,14 @@ Goal 2: Identify any biases / discrimination regarding race, gender, & age
 
 Findings: As a part of this process, I am thinking now it would be helpful to perform a similar analysis from Goal 1 but applied to age & gender 
 
+## Week 3 Discussion - Evaluation
+
+- The target question you want to answer: Do these visualizations provide a clear and intuitive way to explore the traffic stop data?
+- The people you would recruit to answer that question: I think you would want a mixed group of people to answer these questions.  On one side you would want police administration to review the visualizations because they are very familiar with the scenarios and could use this tool to coach their officers.  It would also be helpful to have inexperienced people reviewing the visualizations because they could give you a fresh perspective and insight to the clarity of the tool.
+- The kind of measures you would use to answer your question & what these measures would tell you about the core question: insight depth - I would like to first see what people thought before using my visualizations, then observe them as they interact with them and have them talk about their findings.  I think this would tell me if this was a valuable learning tool 
+- The approach you will use to answer that question: The approach I would take would be a formal experiment so I could hear what users were thinking and see how they are interacting with the visualizations
+- How would you instantiate those methods
+- WHat criteria would you use to indicate that your visualization was successful: The goal of these visualizations is to teach and show that police officers have a long way to go before everyone is treated equally without bias.  This is why I would want to ask people some questions before using the tool to assess their knowledge, then again after using the tool to see what they learned.  If their answers have changed, they've learned something.  If their answers reflect the findings from the data, that would be a successful indicator.
 
 
 ## Sources
