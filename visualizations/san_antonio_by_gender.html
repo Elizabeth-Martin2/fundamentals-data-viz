@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.9.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {"name": "data-5727bbdf67f888712ea2962d2133cf2c"},
+          "mark": {"type": "bar"},
+          "encoding": {
+            "color": {
+              "condition": {
+                "param": "param_80",
+                "field": "subject_sex",
+                "scale": {"scheme": "set2"},
+                "title": "Gender",
+                "type": "nominal"
+              },
+              "value": "lightgrey"
+            },
+            "tooltip": [
+              {"field": "subject_sex", "title": "Gender", "type": "nominal"},
+              {
+                "field": "percentage",
+                "title": "Percentage",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {"labelAngle": 0},
+              "bin": false,
+              "field": "subject_sex",
+              "title": "Gender",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "percentage",
+              "scale": {"domain": [0, 70]},
+              "title": "Population Percentage",
+              "type": "quantitative"
+            }
+          },
+          "height": 500,
+          "name": "view_202",
+          "title": "Gender distribution in San Antonio",
+          "width": 300
+        },
+        {
+          "data": {"name": "data-7424c3449a339ae91476edde686d2a07"},
+          "mark": {"type": "bar"},
+          "encoding": {
+            "color": {
+              "condition": {
+                "param": "param_80",
+                "field": "subject_sex",
+                "scale": {"scheme": "set2"},
+                "title": "Gender",
+                "type": "nominal"
+              },
+              "value": "lightgrey"
+            },
+            "tooltip": [
+              {"field": "subject_sex", "title": "Gender", "type": "nominal"},
+              {
+                "field": "percentage",
+                "title": "Percentage",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {"labelAngle": 0},
+              "bin": false,
+              "field": "subject_sex",
+              "title": "Gender",
+              "type": "nominal"
+            },
+            "y": {
+              "field": "percentage",
+              "scale": {"domain": [0, 70]},
+              "title": "Stops Percentage",
+              "type": "quantitative"
+            }
+          },
+          "height": 500,
+          "name": "view_203",
+          "title": "Gender distribution in San Antonio Traffic Stops",
+          "width": 300
+        }
+      ],
+      "resolve": {"scale": {"color": "independent"}}
+    },
+    {
+      "data": {"name": "data-b1d9d1a488855d77b98352998efff441"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "param_80",
+            "field": "subject_sex",
+            "legend": null,
+            "scale": {"scheme": "set2"},
+            "type": "nominal"
+          },
+          "value": "lightgrey"
+        },
+        "tooltip": [
+          {"field": "subject_sex", "title": "Gender", "type": "nominal"},
+          {"field": "hit_rate", "title": "Hit Rate", "type": "quantitative"}
+        ],
+        "x": {
+          "bin": false,
+          "field": "hit_rate",
+          "title": "Hit Rate",
+          "type": "quantitative"
+        },
+        "y": {"field": "subject_sex", "title": "Gender", "type": "nominal"}
+      },
+      "height": 200,
+      "name": "view_204",
+      "resolve": {"scale": {"color": "independent"}},
+      "title": "Hit Rate by Gender",
+      "width": 730
+    }
+  ],
+  "params": [
+    {
+      "name": "param_80",
+      "select": {"type": "point", "fields": ["subject_sex"]},
+      "bind": "scales",
+      "views": ["view_202", "view_203", "view_204"]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-5727bbdf67f888712ea2962d2133cf2c": [
+      {"subject_sex": "Female", "num_people": 725249, "percentage": 50.56},
+      {"subject_sex": "Male", "num_people": 709291, "percentage": 49.44}
+    ],
+    "data-7424c3449a339ae91476edde686d2a07": [
+      {"subject_sex": "Male", "stops": 58073, "percentage": 59.86},
+      {"subject_sex": "Female", "stops": 38937, "percentage": 40.14}
+    ],
+    "data-b1d9d1a488855d77b98352998efff441": [
+      {"subject_sex": "Female", "hit_rate": 0.08609271523178808},
+      {"subject_sex": "Male", "hit_rate": 0.08047945205479452}
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
