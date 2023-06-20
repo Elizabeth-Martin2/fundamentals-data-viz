@@ -2,10 +2,10 @@
 The dataset I have chosen to use is from the [Stanford Open Policing Project](https://openpolicing.stanford.edu/).  They collect data regarding traffic stops across the United States.  They also discuss their analysis methods and provide tutorials to duplicate their findings. Some of the key attributes of the data include Stop date, time, & location, driver race, age, & sex, search conducted, contraband found, citation or warning issued, arrest made, and reason for stop.  Not every dataset has all these attributes, and some of the datasets are enormous.  I will be using the dataset for San Antonio, Texas, which contains the majority of these properties.
 
 Some questions I would like to answer: 
-	1. Racial diversity of San Antonio
-	2. Any existing biases
-		a. As a <insert race, gender, age> person, how likely are you to be pulled over in San Antonio?
-		b. How do the different factors affect likeliness to be pulled over?
+1. Racial diversity of San Antonio
+2. Any existing biases
+   - As a <insert race, gender, age> person, how likely are you to be pulled over in San Antonio?
+   - How do the different factors affect likeliness to be pulled over?
 
 The creators of the Stanford Open Policing Project detail some of their findings on the webpage under "Findings", but I think their visualization methods are difficult to understand.  Using the sizing differences in the outcome test doesn't provide any extra information and I still struggle to understand what it is trying to convey.  Otherwise, they are interactive, allowing the user to click on the datapoints and reveal more information, but that's the extent.  Their focus is on the race of the driver, and they even focus on the comparison between black, white and hispanic.  I'd like to expand that to ages & genders.  I also think it would be helpful to compare the sample data with the population to get a better understanding of my findings.
 
@@ -28,6 +28,11 @@ Goal 2: Identify any biases / discrimination regarding race, gender, & age
 
 Findings: As a part of this process, I am thinking now it would be helpful to perform a similar analysis from Goal 1 but applied to age & gender 
 
+Initial prototypes:
+![age_groups](https://github.com/Elizabeth-Martin2/fundamentals-data-viz/assets/132227095/9806ad22-1e6d-4590-8209-27c48ceca8f9)
+
+![racial_diversity](https://github.com/Elizabeth-Martin2/fundamentals-data-viz/assets/132227095/8fa75af2-60a7-407a-884d-4d48b8af9cc9)
+
 ## Week 3 Discussion - Evaluation
 
 - The target question you want to answer: Do these visualizations provide a clear and intuitive way to explore the traffic stop data?
@@ -37,6 +42,12 @@ Findings: As a part of this process, I am thinking now it would be helpful to pe
 - How would you instantiate those methods: I would provide the participant a survey before and after using the visualization (an interview could also be used to gather their feedback, but surveys would be more scalable for larger participant groups)
 - What criteria would you use to indicate that your visualization was successful: The goal of these visualizations is to teach and show that police officers have a long way to go before everyone is treated equally and without bias.  This is why I would want to assess the participants before using the tool to rate their existing knowledge, then again after using the tool to see what they learned.  If their answers have changed, they've learned something.  If their changed answers reflect the findings from the data, that would be a successful indicator.
 
+## Week 4 Final Project - Findings
+My final visualizations changed from my prototypes in Week 2.  I added the hit rate test, and had to modify the age group display since I was unable to find reliable data about specific age groups in racial categories. 
+
+For my evaluation, I recruited a few colleagues and family members to review my visualizations.  I didn't write up an actual survey, but had an initial discussion with them about their existing thoughts regarding traffic stops, any biases that might affect a police officer's treatment of a subject, etc.  Then I set them up with my visualization and allowed them to interact with the charts.  Afterwards I had another conversation with them to gather their feedback.  From their feedback I added some more explanation to my jupyter notebook specifically regarding the hit rate test and how the results should be interpreted.  
+
+In future iterations it woudl 
 
 ## Sources
 1. Stanford Open Policing Project - https://openpolicing.stanford.edu/
