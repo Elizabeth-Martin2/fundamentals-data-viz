@@ -11,3 +11,9 @@ In my project, I will expand on the Stanford team's work searching for evidence 
 
 ## Interactive Visualizations
 Visualizations can be found under the `visualizations` folder. To interact with them, copy the vega-lite code from the visualization & plug it into [github's vega editor](https://vega.github.io/editor/#/).  This will compile & allow you to see & interact with it properly.
+
+## Sources
+1. Stanford Open Policing Project - https://openpolicing.stanford.edu/
+  > Vehicular traffic stop data
+2. Census Reporter - https://censusreporter.org/profiles/16000US4865000-san-antonio-tx/
+  > Population data conveniently formatted (original data from the US Census)
