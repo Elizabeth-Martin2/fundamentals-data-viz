@@ -10,4 +10,4 @@ In my project, I will expand on the Stanford team's work searching for evidence 
 > **Important**: It is important to understand the results for the hit rate test.  Having a higher hit rate is the desired outcome.  Say one age group had a hit rate of 80%, this would mean that officers were extra careful to make sure they had a good reason to suspect the subject of carrying contraband.  If another age group had a hit rate of 20%, this would mean that officers were searching this age group for any small suspicion.
 
 ## Interactive Visualizations
-To interact with the visualizations, copy the vega-lite code from the visualization & plug it into [github's vega editor](https://vega.github.io/editor/#/).  This will compile & allow you to see & interact with it properly.
+Visualizations can be found under the `visualizations` folder. To interact with them, copy the vega-lite code from the visualization & plug it into [github's vega editor](https://vega.github.io/editor/#/).  This will compile & allow you to see & interact with it properly.
