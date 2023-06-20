@@ -43,11 +43,12 @@ Initial prototypes:
 - What criteria would you use to indicate that your visualization was successful: The goal of these visualizations is to teach and show that police officers have a long way to go before everyone is treated equally and without bias.  This is why I would want to assess the participants before using the tool to rate their existing knowledge, then again after using the tool to see what they learned.  If their answers have changed, they've learned something.  If their changed answers reflect the findings from the data, that would be a successful indicator.
 
 ## Week 4 Final Project - Findings
-My final visualizations changed from my prototypes in Week 2.  I added the hit rate test, and had to modify the age group display since I was unable to find reliable data about specific age groups in racial categories. 
+My final visualizations changed from my prototypes in Week 2.  I added the hit rate test, and had to modify the age group display since I was unable to find reliable data about specific age groups in racial categories.  Regarding the existance of any bias, we need to take into consideration that some groups might drive more or less than others, but out of the three areas, according to the hit rate test there is a bias against the 40-49 age group.  For the gender data, both Male & Females were treated pretty equally.  Lastly, it seems like Asian/pacific islanders are favored as they have a high hit rate, and all other races are searched more frequently and unsuccessfully. 
+
+In future iterations it would be interesting to expand this analysis to the pedestrian data as well to see if the findings were similar there too.  We could also take other variables into account just for fun like the car type or look into the areas of the traffic stop to see if there were any detectable trends there.
 
 For my evaluation, I recruited a few colleagues and family members to review my visualizations.  I didn't write up an actual survey, but had an initial discussion with them about their existing thoughts regarding traffic stops, any biases that might affect a police officer's treatment of a subject, etc.  Then I set them up with my visualization and allowed them to interact with the charts.  Afterwards I had another conversation with them to gather their feedback.  From their feedback I added some more explanation to my jupyter notebook specifically regarding the hit rate test and how the results should be interpreted.  
 
-In future iterations it woudl 
 
 ## Sources
 1. Stanford Open Policing Project - https://openpolicing.stanford.edu/
