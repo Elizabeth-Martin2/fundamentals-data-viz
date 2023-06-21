@@ -5,7 +5,7 @@ I have used data provided by the [Stanford Open Policing Project](https://openpo
 
 In my project, I will expand on the Stanford team's work searching for evidence of bias but this time regarding age and gender.  I will compare the population data to the sample data and use the hit rate test in each category to form a basis for my decision.
 > **Hit Rate Test**:
-> The “Hit Rate” is calculated by taking the number of hits, in our case, the scenario when the subject was searched & found to be carrying contraband, divided by the total number of occurrences i.e., the total number of times subjects were searched.
+> The “Hit Rate” is calculated by taking the number of hits, in our case, the scenario when a subject was searched & found to be carrying contraband, divided by the total number of occurrences i.e., the total number of times subjects were searched.
 
 > **Important**: It is important to understand the results for the hit rate test.  Having a higher hit rate is the desired outcome.  Say one age group had a hit rate of 80%, this would mean that officers were extra careful to make sure they had a good reason to suspect the subject of carrying contraband, and so they were more likely to find it when searching the subject.  If another age group had a hit rate of 20%, this would mean that officers were searching this age group for any small suspicion and didn't find it nearly as often.
 
